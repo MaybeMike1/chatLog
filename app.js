@@ -20,14 +20,14 @@ var Message = mongoose.model('Message', {
 
 
 
-app.get(process.env.PORT + '/messages', (req, res) => {
+app.get('/messages', (req, res) => {
     Message.find({}, (err, messages) => {
         res.send(messages)
     })
     
 })
 
-app.post(process.env.PORT + '/messages', async (req, res) => {
+app.post('/messages', async (req, res) => {
 
     try {
         var message = new Message(req.body)
@@ -63,7 +63,7 @@ io.on('connection', (socket) => {
 mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true  }, (err) => {
     console.log("mdb connection", err)
 })
-var server = http.listen(process.env.PORT || 5000, () => {
+var server = http.listen(process.env.PORT, () => {
     console.log('server is listening on port', server.address().port)
 })
 
