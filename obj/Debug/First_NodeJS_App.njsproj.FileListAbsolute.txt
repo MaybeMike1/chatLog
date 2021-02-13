@@ -1,0 +1,3 @@
+C:\Users\mikeb\source\repos\First_NodeJS_App\First_NodeJS_App\obj\Debug\First_NodeJS_App.njsproj.CoreCompileInputs.cache
+C:\Users\mikeb\source\repos\First_NodeJS_App\First_NodeJS_App\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\mikeb\source\repos\First_NodeJS_App\First_NodeJS_App\obj\Debug\First_NodeJS_App.njsprojAssemblyReference.cache
