@@ -43,13 +43,13 @@
     }
 
     function getMessages() {
-        $.get('http://localhost:5000/messages', (data) => {
+        $.get('http://localhost:5000/messages'|| process.env.PORT, (data) => {
             data.forEach(addMessage)
         })
     }
 
     function postMessage(message) {
-        $.post('http://localhost:5000/messages', message)
+        $.post('http://localhost:5000/messages' || process.env.PORT, message)
     }
 
     
