@@ -20,14 +20,14 @@ var Message = mongoose.model('Message', {
 
 
 
-app.get('/messages', (req, res) => {
+app.get(process.env.PORT + '/messages', (req, res) => {
     Message.find({}, (err, messages) => {
         res.send(messages)
     })
     
 })
 
-app.post(rocess.env.PORT + '/messages', async (req, res) => {
+app.post(process.env.PORT + '/messages', async (req, res) => {
 
     try {
         var message = new Message(req.body)
