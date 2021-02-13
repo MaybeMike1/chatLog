@@ -27,7 +27,7 @@ app.get('/messages', (req, res) => {
     
 })
 
-app.post('/messages', async (req, res) => {
+app.post(rocess.env.PORT + '/messages', async (req, res) => {
 
     try {
         var message = new Message(req.body)
