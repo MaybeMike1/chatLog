@@ -43,13 +43,13 @@
     }
 
     function getMessages() {
-        $.get('http://localhost:5000/messages'|| process.env.PORT, (data) => {
+        $.get('https://chatlogdemo.herokuapp.com/messages'|| process.env.PORT, (data) => {
             data.forEach(addMessage)
         })
     }
 
     function postMessage(message) {
-        $.post('http://localhost:5000/messages' || process.env.PORT, message)
+        $.post('https://chatlogdemo.herokuapp.com/messages' || process.env.PORT, message)
     }
 
     
